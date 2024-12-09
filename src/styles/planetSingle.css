@@ -1,0 +1,106 @@
+/* Contenedor principal */
+.wrapper {
+    background-color: #111;
+    color: #d3d3d3;
+    font-family: 'Arial', sans-serif;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Texto de carga */
+.wrapper h1 {
+    color: #ffcc00;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: start;
+    /* margin-top: 50px; */
+}
+
+/* Estilo de la tarjeta de planeta */
+.cardContainer {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+.row.g-0 {
+    background-color: #2b2b2b;
+    padding: 50px;
+}
+
+/* Contenedor de la imagen */
+.cardimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Información del planeta */
+.card-body {
+    background-color: #2b2b2b;
+    color: #d3d3d3;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Nombre del planeta */
+.planetName {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+/* Lista de detalles */
+.card-body ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+    /* line-height: 2; */
+    /* margin-bottom: 0; */
+}
+
+.card-body li {
+    margin-bottom: 15px;
+}
+
+.card-body strong {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .cardContainer {
+        max-width: 100% !important;
+    }
+
+    .row.g-0 {
+        flex-direction: column;
+    }
+
+    .cardimg {
+        max-width: 100%;
+    }
+
+    .card-body {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+}

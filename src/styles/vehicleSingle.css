@@ -1,0 +1,96 @@
+/* Contenedor principal */
+.vehicle-single-container {
+    display: flex;
+    background-color: #151515;
+    padding: 50px;
+    justify-content: space-around;
+    }
+
+/* Texto de carga */
+.loading-text {
+    color: #ffcc00; /* Color dorado */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.vehicle-single-card {
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    /* max-width: 1200px; */
+    overflow: hidden;
+}
+
+.row.single-vehicle.g-0 {
+    background-color: #2b2b2b;
+}
+
+.vehicle-single-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.vehicle-single-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.vehicle-single-info {
+    background-color: #2b2b2b;
+    color: #d3d3d3; 
+    padding: 20px; 
+}
+
+.vehicle-single-name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.vehicle-single-details-list {
+    list-style-type: none;
+    padding: 0; 
+    font-size: 1.2rem; 
+    line-height: 2; 
+}
+
+.vehicle-single-details-list li {
+    margin-bottom: 15px; 
+}
+
+.vehicle-single-details-list strong {
+    color: white; 
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .vehicle-single-card {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        max-width: 100%; /* Ancho completo en móvil */
+        margin-bottom: 20px; /* Espacio inferior en pantallas pequeñas */
+    }
+
+    .vehicle-single-img-container {
+        max-width: 100%; /* Ancho completo para la imagen en móvil */
+        margin-bottom: 20px; /* Espacio inferior en pantallas pequeñas */
+    }
+
+    .vehicle-single-info {
+        border-top-left-radius: 10px; /* Bordes redondeados en móvil */
+        border-bottom-left-radius: 10px; /* Bordes redondeados en móvil */
+        padding: 20px; /* Espaciado adicional en móvil */
+        text-align: left; /* Alinear texto a la izquierda en móvil */
+    }
+}

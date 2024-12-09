@@ -1,0 +1,95 @@
+.databank-vehicles-container {
+    background-color: #151515;
+    color: #fff;
+    padding: 2rem;
+    font-family: 'Din', Arial, sans-serif;
+}
+
+.databank-title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; */
+}
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.vehicle-card {
+    background-color: #202020;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+}
+
+.vehicle-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.vehicle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.vehicle-card:hover .vehicle-image img {
+    transform: scale(1.05);
+}
+
+.vehicle-info {
+    padding: 1rem;
+}
+
+.vehicle-name {
+    display: flex;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    justify-content: space-between;
+}
+
+.vehicle-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favorite-icon {
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.favorite-icon:hover {
+    color: white;
+}
+
+.details-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.details-link:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .vehicle-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

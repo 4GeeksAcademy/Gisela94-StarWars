@@ -1,0 +1,119 @@
+/* home.css */
+.home-sw {
+    background-color: #333;
+    padding: 2rem;
+}
+
+.home-sw-title {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.databank-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.card-list-container {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #fff; /* Cambié a blanco para que se vea bien sobre el fondo oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Card Items */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes de las cards */
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img:hover {
+    transform: scale(1.1);
+}
+
+/* Contenido de las cards */
+.card-content {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Botón de "like" */
+.like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.heart-cards {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.btn-see-more {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Letras mayúsculas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+.btn-see-more:hover {
+    background-color: #ff9c00;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para los enlaces del botón */
+.see-more-link {
+    text-decoration: none;
+}
+
